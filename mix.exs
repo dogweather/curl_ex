@@ -9,7 +9,9 @@ defmodule CurlEx.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
 
+      description: description(),
       licenses: ["MIT"],
+      source_url: "https://github.com/dogweather/curl_ex",
     ]
   end
 
@@ -28,5 +30,9 @@ defmodule CurlEx.MixProject do
       {:credo,    "> 0.0.0", only: [:dev], runtime: false},
       {:dialyxir, "> 0.0.0", only: [:dev], runtime: false},
     ]
+  end
+
+  defp description() do
+    "A very simple Elixir wrapper for the curl command line tool. Currently supports only GET requests with no options."
   end
 end
