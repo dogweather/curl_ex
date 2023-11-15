@@ -12,6 +12,11 @@ defmodule CurlEx.MixProject do
       description: description(),
       package: [licenses: ["MIT"], links: %{"GitHub" => "https://github.com/dogweather/curl_ex"}],
       source_url: "https://github.com/dogweather/curl_ex",
+
+      docs: [
+        main: "CurlEx",
+        extras: ["README.md"]
+      ]
     ]
   end
 
