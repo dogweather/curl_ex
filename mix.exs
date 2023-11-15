@@ -10,7 +10,7 @@ defmodule CurlEx.MixProject do
       deps: deps(),
 
       description: description(),
-      licenses: ["MIT"],
+      package: [licenses: ["MIT"], links: %{"GitHub" => "https://github.com/dogweather/curl_ex"}],
       source_url: "https://github.com/dogweather/curl_ex",
     ]
   end
@@ -29,6 +29,7 @@ defmodule CurlEx.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
       {:credo,    "> 0.0.0", only: [:dev], runtime: false},
       {:dialyxir, "> 0.0.0", only: [:dev], runtime: false},
+      {:ex_doc,  ">= 0.0.0", only: :dev, runtime: false},
     ]
   end
 
