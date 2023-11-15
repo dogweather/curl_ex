@@ -14,7 +14,7 @@ Meanwhile, `curl` works just fine.
 
 ```elixir
 iex(1)> CurlEx.get!("https://google.com")
-"<HTML>...</HTML>\r\n"
+"<HTML>...</HTML>"
 ```
 
 
