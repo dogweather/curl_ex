@@ -9,13 +9,16 @@ defmodule CurlEx.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
 
+      # Docs
+      source_url: "https://github.com/dogweather/curl_ex",
       description: description(),
       package: [licenses: ["MIT"], links: %{"GitHub" => "https://github.com/dogweather/curl_ex"}],
-      source_url: "https://github.com/dogweather/curl_ex",
 
       docs: [
         main: "CurlEx",
-        extras: ["README.md"]
+        extras: ["README.md"],
+        authors: ["Robb Shecter"],
+        source_ref: "master",
       ]
     ]
   end
