@@ -24,7 +24,7 @@ iex(1)> CurlEx.get!("https://google.com")
 ```elixir
 def deps do
   [
-    {:curl_ex, "~> 1.0.0"}
+    {:curl_ex, "~> 1.0.1"}
   ]
 end
 ```
