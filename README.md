@@ -6,8 +6,8 @@ to install it first.
 
 ## Motivation
 
-I got frustrated by _Unknown CA_ errors from HTTPoison and Httpc.
-Meanwhile, `curl` works just fine.
+I got frustrated by _Unknown CA_ errors from HTTPoison and Httpc. For example,
+when connecting to `http://grad.tamu.edu`. Meanwhile, `curl` works just fine.
 
 
 ## Usage
@@ -24,7 +24,7 @@ iex(1)> CurlEx.get!("https://google.com")
 ```elixir
 def deps do
   [
-    {:curl_ex, "~> 1.0.0"}
+    {:curl_ex, "~> 1.0.1"}
   ]
 end
 ```
