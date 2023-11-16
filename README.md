@@ -7,8 +7,7 @@ to install it first.
 ## Motivation
 
 I got frustrated by _Unknown CA_ errors from HTTPoison and Httpc. For example,
-when connecting to `http://grad.tamu.edu`.
-Meanwhile, `curl` works just fine.
+when connecting to `http://grad.tamu.edu`. Meanwhile, `curl` works just fine.
 
 
 ## Usage
