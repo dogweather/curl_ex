@@ -4,7 +4,7 @@ defmodule CurlEx.MixProject do
   def project do
     [
       app: :curl_ex,
-      version: "1.0.1",
+      version: "1.2.0",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -42,6 +42,6 @@ defmodule CurlEx.MixProject do
   end
 
   defp description() do
-    "A very simple Elixir wrapper for the curl command line tool. Currently supports only GET requests with no options."
+    "A very simple Elixir wrapper for the curl command line tool. Currently supports only GET requests. An option allows for a custom User Agent."
   end
 end

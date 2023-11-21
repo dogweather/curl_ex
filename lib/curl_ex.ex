@@ -9,10 +9,10 @@ defmodule CurlEx do
   ```elixir
   iex(1)> CurlEx.get!("https://google.com")
   "<html>...</html>"
-  ```
 
   iex(2)> CurlEx.get_with_user_agent!("https://google.com", :microsoft_edge_windows)
   "<html>...</html>"
+  ```
   """
 
   @doc """

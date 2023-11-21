@@ -12,10 +12,13 @@ when connecting to `http://grad.tamu.edu`. Meanwhile, `curl` works just fine.
 
 ## Usage
 
-```elixir
+ ```elixir
 iex(1)> CurlEx.get!("https://google.com")
-"<HTML>...</HTML>"
-```
+"<html>...</html>"
+
+iex(2)> CurlEx.get_with_user_agent!("https://google.com", :microsoft_edge_windows)
+"<html>...</html>"
+ ```
 
 
 ## Installation
@@ -24,7 +27,7 @@ iex(1)> CurlEx.get!("https://google.com")
 ```elixir
 def deps do
   [
-    {:curl_ex, "~> 1.0.1"}
+    {:curl_ex, "~> 1.2.0"}
   ]
 end
 ```
