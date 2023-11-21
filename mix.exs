@@ -15,7 +15,6 @@ defmodule CurlEx.MixProject do
       package: [licenses: ["MIT"], links: %{"GitHub" => "https://github.com/dogweather/curl_ex"}],
 
       docs: [
-        main: "Readme",
         extras: ["README.md"],
         authors: ["Robb Shecter"],
         source_ref: "master",
