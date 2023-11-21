@@ -12,7 +12,7 @@ defmodule CurlExTest do
   end
 
 
-  test "get! returns the contents of an http URL using a custom User Agent" do
+  test "get! returns the contents of an http URL that requires a custom User Agent" do
     url = "https://www.axios.com/local/portland/2023/11/20/ppb-police-body-came-explained-how-it-works"
 
     assert CurlEx.get_with_user_agent!(url, :microsoft_edge_windows) =~ "agencies can't use facial recognition software"
