@@ -1,15 +1,18 @@
 defmodule CurlEx do
   @moduledoc """
   A very simple Elixir wrapper for the curl command line tool.
-  Currently supports only GET requests with no options.
+  Currently supports only GET requests.
   Just make sure you have the `curl` command line tool installed on your system.
 
-  ## Example
+  ## Examples
 
   ```elixir
   iex(1)> CurlEx.get!("https://google.com")
   "<html>...</html>"
   ```
+
+  iex(2)> CurlEx.get_with_user_agent!("https://google.com", :microsoft_edge_windows)
+  "<html>...</html>"
   """
 
   @doc """
