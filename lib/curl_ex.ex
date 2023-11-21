@@ -22,6 +22,9 @@ defmodule CurlEx do
   end
 
 
+  @doc """
+  Get the contents of a URL using curl with a custom User Agent.
+  """
   @spec get_with_user_agent!(binary, :microsoft_edge_windows) :: binary
   def get_with_user_agent!(url, :microsoft_edge_windows) do
     {output, 0} = System.cmd("curl", ["--silent", "--user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.100.0", url])
